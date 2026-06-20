@@ -1,0 +1,17 @@
+{
+  "name": "mermaid",
+  "version": "1.0.0",
+  "displayName": "Mermaid Text Diagrams",
+  "displayName_zh": "Mermaid 文本图表",
+  "description": "Generate Mermaid markdown diagrams for documentation and README files",
+  "description_zh": "生成 Mermaid 文本格式图表，适合文档和 README",
+  "capabilities": ["generate", "edit"],
+  "triggers": {
+    "en": ["mermaid", "text diagram", "markdown diagram", "README diagram"],
+    "zh": ["mermaid", "文本图", "文档图表", "README图"]
+  },
+  "files": {
+    "instructions": "./instructions.md",
+    "instructions_zh": "./instructions.zh-CN.md"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "$schema": "https://raw.githubusercontent.com/user/ai-viz/main/schemas/config.schema.json",
+  "version": "1.0.0",
+  "tool": "claude-code",
+  "language": "zh-CN",
+  "plugins": ["drawio", "mermaid"],
+  "designLanguage": "./design-language.yaml",
+  "export": {
+    "drawio": {
+      "path": "auto",
+      "defaultFormat": "png",
+      "scale": 2
+    }
+  }
+}

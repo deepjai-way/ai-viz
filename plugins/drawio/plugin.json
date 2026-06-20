@@ -1,0 +1,23 @@
+{
+  "name": "drawio",
+  "version": "1.0.0",
+  "displayName": "Draw.io Professional Diagrams",
+  "displayName_zh": "Draw.io 专业图表",
+  "description": "Generate Draw.io XML diagrams with CLI export to PNG/SVG/PDF",
+  "description_zh": "生成 Draw.io XML 格式图表，支持 CLI 导出 PNG/SVG/PDF",
+  "capabilities": ["generate", "edit", "export"],
+  "triggers": {
+    "en": ["drawio", "professional diagram", "export PNG", "formal diagram"],
+    "zh": ["drawio", "专业架构图", "导出PNG", "正式图表", "画drawio"]
+  },
+  "export": {
+    "formats": ["png", "svg", "pdf"],
+    "driver": "./export.js",
+    "requires": "drawio-desktop"
+  },
+  "files": {
+    "instructions": "./instructions.md",
+    "instructions_zh": "./instructions.zh-CN.md",
+    "schema": "./schema.md"
+  }
+}

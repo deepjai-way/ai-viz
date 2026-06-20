@@ -1,0 +1,33 @@
+{
+  "name": "ai-viz",
+  "version": "0.1.0",
+  "description": "AI-powered visualization methodology & toolkit - Turn ideas into professional diagrams and illustrations with AI coding tools",
+  "keywords": ["ai", "visualization", "diagram", "drawio", "excalidraw", "mermaid", "claude-code", "cursor"],
+  "author": "",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/user/ai-viz"
+  },
+  "bin": {
+    "ai-viz": "./bin/cli.js"
+  },
+  "main": "src/index.js",
+  "files": [
+    "bin/",
+    "src/",
+    "core/",
+    "specs/",
+    "plugins/",
+    "templates/"
+  ],
+  "dependencies": {
+    "@inquirer/prompts": "^7.0.0",
+    "commander": "^12.0.0",
+    "chalk": "^4.1.2",
+    "fs-extra": "^11.2.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

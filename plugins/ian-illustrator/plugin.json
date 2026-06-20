@@ -1,0 +1,21 @@
+{
+  "name": "ian-illustrator",
+  "version": "1.0.0",
+  "displayName": "Ian Xiaohei Article Illustrations",
+  "displayName_zh": "Ian 小黑文章配图",
+  "description": "Generate quirky, hand-drawn illustrations for articles with the Xiaohei IP character",
+  "description_zh": "为文章生成怪诞清爽、有小黑 IP 的正文配图",
+  "capabilities": ["generate", "edit"],
+  "triggers": {
+    "en": ["article illustration", "blog image", "content illustration", "xiaohei", "hand-drawn", "popular science diagram"],
+    "zh": ["文章配图", "正文配图", "小黑", "怪诞配图", "内容配图", "科普配图", "概念图解"]
+  },
+  "output": {
+    "format": "png",
+    "description": "16:9 horizontal hand-drawn PNG illustrations"
+  },
+  "files": {
+    "instructions": "./instructions.md",
+    "instructions_zh": "./instructions.zh-CN.md"
+  }
+}

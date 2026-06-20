@@ -1,0 +1,53 @@
+# AI-Viz Design Language Configuration
+# 项目级设计语言配置文件
+# 使用时复制到项目根目录，按需修改配色和偏好
+
+# ─── 项目信息 ───────────────────────────────────────────────
+project: "My Project"
+version: "1.0"
+
+# ─── 色彩系统 ───────────────────────────────────────────────
+# 语义映射：
+#   核心业务服务 → primary
+#   外部系统/第三方 → secondary
+#   网关/入口/关键路径/决策点 → accent
+#   基础设施（DB/MQ/缓存） → muted
+#   异常/告警/需关注 → danger
+colors:
+  primary: "#a5d8ff"       # 主要元素（核心服务/节点）
+  secondary: "#b2f2bb"     # 次要元素（外部系统/辅助）
+  accent: "#ffd43b"        # 强调（网关/关键路径/决策点）
+  muted: "#e9ecef"         # 弱化（基础设施/背景层）
+  danger: "#ffc9c9"        # 告警/错误/风险
+  text: "#1e1e1e"          # 文字/边框默认色
+  background: "#ffffff"    # 画布背景色
+
+# ─── 排版系统 ───────────────────────────────────────────────
+typography:
+  font_family: 5           # Excalifont（excalidraw 手绘字体）
+  font_size_title: 24      # 标题字号
+  font_size_body: 16       # 正文/节点标签
+  font_size_caption: 12    # 注释/副标签
+  font_size_arrow: 13      # 箭头标注
+
+# ─── 布局系统 ───────────────────────────────────────────────
+layout:
+  direction: "top-to-bottom"   # 默认布局方向：top-to-bottom | left-to-right
+  grid_size: 10                # 网格对齐粒度（px）
+  h_gap: 250                   # 水平间距（px）
+  v_gap: 180                   # 垂直间距（px）
+  margin: 50                   # 画布边距（px）
+  max_nodes_per_row: 4         # 同层最大节点数（超过换行）
+
+# ─── 格式偏好 ───────────────────────────────────────────────
+format_preference:
+  internal: "excalidraw"       # 内部文档默认格式
+  external: "drawio"           # 对外文档默认格式
+  documentation: "mermaid"     # README/git 文档默认格式
+
+# ─── 风格预设 ───────────────────────────────────────────────
+# 可选值:
+#   handdrawn  - 手绘描边、轻松感、Excalifont，适合内部讨论/设计文档
+#   corporate  - 低饱和度、规整、无手绘感，适合对外方案/商务汇报
+#   academic-bw - 黑白灰、无彩色、严谨，适合论文/学术报告
+style_preset: "handdrawn"

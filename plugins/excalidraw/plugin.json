@@ -1,0 +1,18 @@
+{
+  "name": "excalidraw",
+  "version": "1.0.0",
+  "displayName": "Excalidraw Hand-drawn Diagrams",
+  "displayName_zh": "Excalidraw 手绘风格图表",
+  "description": "Generate Excalidraw JSON diagrams with hand-drawn aesthetic",
+  "description_zh": "生成 Excalidraw JSON 格式图表，手绘风格",
+  "capabilities": ["generate", "edit"],
+  "triggers": {
+    "en": ["excalidraw", "hand-drawn diagram", "sketch", "whiteboard"],
+    "zh": ["excalidraw", "手绘图", "画架构图", "草图", "白板"]
+  },
+  "files": {
+    "instructions": "./instructions.md",
+    "instructions_zh": "./instructions.zh-CN.md",
+    "schema": "./schema.md"
+  }
+}
