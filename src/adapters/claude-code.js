@@ -33,7 +33,15 @@ class ClaudeCodeAdapter extends BaseAdapter {
    * @returns {Promise<string[]>} List of files created
    */
   async install(projectRoot, compiled) {
-    const outputDir = await this.ensureOutputDir(projectRoot);
+    const outputDir = this.getOutputDir(projectRoot);
+
+    // Clean output directory to remove stale files from removed plugins
+    if (await fs.pathExists(outputDir)) {
+      await fs.emptyDir(outputDir);
+    } else {
+      await fs.ensureDir(outputDir);
+    }
+
     const createdFiles = [];
 
     // 1. Generate SKILL.md (main entry)

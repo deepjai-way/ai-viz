@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="50%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0c1a2e"/>
+    </linearGradient>
+    <linearGradient id="arrowG" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#60a5fa"/>
+      <stop offset="50%" stop-color="#34d399"/>
+      <stop offset="100%" stop-color="#fbbf24"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#60a5fa" stroke-width="0.5" opacity="0.06"/>
+    </pattern>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="400" fill="url(#bg)"/>
+  <rect width="1200" height="400" fill="url(#grid)"/>
+
+  <!-- Glow orbs -->
+  <circle cx="1100" cy="60" r="150" fill="#60a5fa" opacity="0.04"/>
+  <circle cx="100" cy="350" r="180" fill="#34d399" opacity="0.03"/>
+
+  <!-- Logo icon -->
+  <rect x="398" y="58" width="44" height="44" rx="8" fill="#1e3a5f" stroke="#60a5fa" stroke-width="2"/>
+  <path d="M410 86 L420 70 L430 86" fill="none" stroke="#34d399" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="420" cy="92" r="3" fill="#fbbf24"/>
+  <line x1="410" y1="86" x2="430" y2="86" stroke="#60a5fa" stroke-width="1.5" stroke-dasharray="3,2"/>
+
+  <!-- Title -->
+  <text x="452" y="90" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="46" font-weight="800" fill="#f8fafc" letter-spacing="-1">ai-viz</text>
+
+  <!-- Subtitle -->
+  <text x="600" y="125" font-family="sans-serif" font-size="15" fill="#94a3b8" text-anchor="middle" letter-spacing="3">AI-POWERED VISUALIZATION TOOLKIT</text>
+
+  <!-- Left: Code input box -->
+  <rect x="115" y="168" width="310" height="140" rx="12" fill="#0d1117" stroke="#60a5fa" stroke-width="1" opacity="0.9"/>
+  <!-- Window dots -->
+  <circle cx="137" cy="188" r="5" fill="#ff5f57"/>
+  <circle cx="153" cy="188" r="5" fill="#febc2e"/>
+  <circle cx="169" cy="188" r="5" fill="#28c840"/>
+  <!-- Code text -->
+  <text x="137" y="218" font-family="monospace" font-size="13" fill="#94a3b8">
+    <tspan fill="#7c3aed">描述</tspan>你的系统架构...</text>
+  <text x="137" y="240" font-family="monospace" font-size="13" fill="#60a5fa">"API 网关 → 用户服务</text>
+  <text x="137" y="262" font-family="monospace" font-size="13" fill="#60a5fa"> → 订单服务 → 数据库"</text>
+  <text x="137" y="286" font-family="monospace" font-size="13" fill="#94a3b8" opacity="0.5">▊</text>
+
+  <!-- Center arrow -->
+  <line x1="445" y1="238" x2="570" y2="238" stroke="url(#arrowG)" stroke-width="2.5"/>
+  <polygon points="570,228 595,238 570,248" fill="#fbbf24"/>
+  <text x="510" y="218" font-family="sans-serif" font-size="20" text-anchor="middle">✨</text>
+  <text x="510" y="268" font-family="sans-serif" font-size="11" fill="#94a3b8" text-anchor="middle">ai-viz</text>
+
+  <!-- Right: Diagram output box -->
+  <rect x="615" y="168" width="310" height="140" rx="12" fill="#0f2942" stroke="#34d399" stroke-width="1" opacity="0.9"/>
+  <!-- Architecture diagram inside -->
+  <!-- API Gateway -->
+  <rect x="710" y="180" width="120" height="32" rx="6" fill="#1e3a5f" stroke="#fbbf24" stroke-width="1.5"/>
+  <text x="770" y="200" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#fbbf24">API Gateway</text>
+  <!-- User Service -->
+  <rect x="640" y="230" width="110" height="30" rx="6" fill="#1e3a5f" stroke="#60a5fa" stroke-width="1.5"/>
+  <text x="695" y="249" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#60a5fa">User Service</text>
+  <!-- Order Service -->
+  <rect x="790" y="230" width="110" height="30" rx="6" fill="#1e3a5f" stroke="#34d399" stroke-width="1.5"/>
+  <text x="845" y="249" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#34d399">Order Service</text>
+  <!-- Database -->
+  <rect x="790" y="275" width="110" height="24" rx="4" fill="#1e3a5f" stroke="#94a3b8" stroke-width="1"/>
+  <text x="845" y="291" text-anchor="middle" font-family="sans-serif" font-size="10" fill="#94a3b8">Database</text>
+  <!-- Connection lines -->
+  <line x1="750" y1="212" x2="710" y2="230" stroke="#60a5fa" stroke-width="1.2"/>
+  <line x1="790" y1="212" x2="830" y2="230" stroke="#34d399" stroke-width="1.2"/>
+  <line x1="845" y1="260" x2="845" y2="275" stroke="#94a3b8" stroke-width="1"/>
+
+  <!-- Bottom badges -->
+  <rect x="330" y="340" width="90" height="28" rx="14" fill="#60a5fa" opacity="0.1" stroke="#60a5fa" stroke-width="0.8" stroke-opacity="0.3"/>
+  <text x="375" y="358" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#94a3b8">DrawIO</text>
+
+  <rect x="440" y="340" width="100" height="28" rx="14" fill="#60a5fa" opacity="0.1" stroke="#60a5fa" stroke-width="0.8" stroke-opacity="0.3"/>
+  <text x="490" y="358" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#94a3b8">Excalidraw</text>
+
+  <rect x="560" y="340" width="90" height="28" rx="14" fill="#60a5fa" opacity="0.1" stroke="#60a5fa" stroke-width="0.8" stroke-opacity="0.3"/>
+  <text x="605" y="358" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#94a3b8">Mermaid</text>
+
+  <rect x="670" y="340" width="120" height="28" rx="14" fill="#60a5fa" opacity="0.1" stroke="#60a5fa" stroke-width="0.8" stroke-opacity="0.3"/>
+  <text x="730" y="358" text-anchor="middle" font-family="sans-serif" font-size="11" fill="#94a3b8">10+ AI Tools</text>
+</svg>

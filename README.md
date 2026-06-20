@@ -10,6 +10,10 @@
 
 ---
 
+<p align="center">
+  <img src="./images/hero-banner.svg" alt="ai-viz - AI-powered visualization methodology & toolkit" width="100%">
+</p>
+
 **You focus on ideas and architecture decisions. AI handles the visualization.**
 
 ai-viz compiles visualization methodology and format-specific instructions into your AI coding tool's native instruction directory. Once installed, just describe what you want — the AI generates professional diagrams in DrawIO, Excalidraw, or Mermaid format.
@@ -32,6 +36,10 @@ The name reflects our core philosophy: humans focus on thinking, architecture, a
 ## Dynamic Routing
 
 > ai-viz doesn't just draw diagrams — it intelligently decides **what** to draw based on your content.
+
+<p align="center">
+  <img src="./images/routing.svg" alt="Smart Routing Engine: Knowledge Source → Diagram Type → Plugin → Output" width="100%">
+</p>
 
 When you describe a visualization need, ai-viz automatically analyzes your content and routes it to the most appropriate diagram type and plugin — no manual selection required.
 
@@ -155,6 +163,10 @@ ai-viz/
 
 ## How It Works
 
+<p align="center">
+  <img src="./images/workflow.svg" alt="ai-viz workflow: Init → Compile → Adapt → Use" width="100%">
+</p>
+
 1. `npx ai-viz init` reads your preferences
 2. The **Compiler** assembles core methodology + selected plugins + design language
 3. The **Adapter** for your AI tool writes compiled instructions to the tool's native location
@@ -165,6 +177,22 @@ ai-viz/
 - [Getting Started](./docs/en/getting-started.md)
 - [Architecture](./docs/en/architecture.md)
 - [Plugin Development](./docs/en/plugin-development.md)
+
+## Author & Community
+
+ai-viz is maintained by **Li Hao**, a 10-year product engineering practitioner and founder of **DeepJAI**, focusing on business architecture, system design, and AI Agent engineering.
+
+For Chinese readers, I also write about system design, AI Coding, architecture thinking, and AI Agent engineering on my WeChat official account:
+
+<p align="center">
+  <img src="./images/wechat-official-account.png" alt="WeChat Official Account: 程序员李浩" width="360">
+</p>
+
+Search **程序员李浩** on WeChat to follow.
+
+- For technical discussion, join the free **DeepJAI open community**.
+- For systematic learning, follow the in-progress **AI Three-Sword Course**. The course is the foundation of DeepJAI's learning system, and each stage may later evolve into dedicated columns.
+- The **DeepJAI member community** provides course materials, professional Q&A, learning feedback, and long-term support.
 
 ## Contributing
 

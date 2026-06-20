@@ -37,3 +37,8 @@ coverage/
 tmp/
 temp/
 .cache/
+
+# ai-viz generated output (testing artifacts)
+ai-viz.config.json
+design-language.yaml
+skills/

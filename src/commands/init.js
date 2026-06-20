@@ -39,6 +39,7 @@ const PLUGIN_CHOICES = [
   { name: 'drawio - 专业正式图表，支持 PNG/SVG 导出', value: 'drawio' },
   { name: 'excalidraw - 手绘风格，适合内部讨论', value: 'excalidraw' },
   { name: 'mermaid - 轻量文本图表，适合 README', value: 'mermaid' },
+  { name: 'ian-illustrator - 小黑 IP 手绘文章配图', value: 'ian-illustrator' },
 ];
 
 const LANGUAGE_CHOICES = [

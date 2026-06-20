@@ -12,8 +12,11 @@ const ADAPTERS = {
   'windsurf': () => require('../adapters/windsurf'),
   'opencode': () => require('../adapters/opencode'),
   'copilot': () => require('../adapters/copilot'),
+  'codex': () => require('../adapters/codex'),
   'qoder': () => require('../adapters/qoder'),
   'aider': () => require('../adapters/aider'),
+  'trae': () => require('../adapters/trae'),
+  'codebuddy': () => require('../adapters/codebuddy'),
 };
 
 /**

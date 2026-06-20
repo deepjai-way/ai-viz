@@ -10,6 +10,10 @@
 
 ---
 
+<p align="center">
+  <img src="./images/hero-banner.svg" alt="ai-viz - AI 驱动的可视化方法论与工具包" width="100%">
+</p>
+
 **人专注于思想和架构判断，可视化执行交给 AI。**
 
 ai-viz 将可视化方法论和格式指令编译安装到 AI 编程工具的原生指令目录中。安装后，你只需描述需求 — AI 即可生成 DrawIO、Excalidraw 或 Mermaid 格式的专业图表。
@@ -32,6 +36,10 @@ ai-viz 将可视化方法论和格式指令编译安装到 AI 编程工具的原
 ## 智能路由
 
 > ai-viz 不只是画图工具——它能根据你的内容智能判断应该画什么类型的图。
+
+<p align="center">
+  <img src="./images/routing.svg" alt="智能路由引擎：知识源→图种→插件→输出" width="100%">
+</p>
 
 当你描述可视化需求时，ai-viz 会自动分析内容并路由到最合适的图表类型和插件——无需手动选择。
 
@@ -155,6 +163,10 @@ ai-viz/
 
 ## 工作原理
 
+<p align="center">
+  <img src="./images/workflow.svg" alt="ai-viz 工作流程：Init → Compile → Adapt → Use" width="100%">
+</p>
+
 1. `npx ai-viz init` 读取你的偏好设置
 2. **编译器**组装核心方法论 + 选中的插件 + 设计语言
 3. **适配器**将编译后的指令写入 AI 工具的原生目录
@@ -165,6 +177,27 @@ ai-viz/
 - [快速开始](./docs/zh/getting-started.md)
 - [架构文档](./docs/zh/architecture.md)
 - [插件开发指南](./docs/zh/plugin-development.md)
+- [从架构图到万物可视化：一套 AI 驱动的通用方法论是怎么诞生的](./docs/zh/from-architecture-diagrams-to-everything-visualized.md)
+
+## 关注作者
+
+如果你对 **AI Coding、系统设计、业务架构、AI Agent 工程化** 感兴趣，欢迎关注我的微信公众号：
+
+<p align="center">
+  <img src="./images/wechat-official-account.png" alt="微信公众号：程序员李浩" width="360">
+</p>
+
+我是李浩，十年互联网产品研发工程师，DeepJAI 品牌创始人。
+
+`ai-viz` 是我在长期 AI 编程、架构表达、工程可视化和 Agent 工作流实践中沉淀出来的一部分。在公众号里，我会持续分享系统设计与 AI 实战干货，包括 AI Coding、Agent 工程化、业务架构和开源项目复盘。
+
+如果你只是想做技术交流，可以加入 **DeepJAI 自由交流群**。
+
+如果你想系统学习 AI Coding、业务架构与 Agent 工程化，可以关注我正在打磨的 **《AI三剑课》**。《AI三剑课》是 DeepJAI 的课程体系底座，后续剑1、剑2、剑3都可能衍生出对应专栏。
+
+**DeepJAI 会员交流群** 会承接课程资料、专业答疑、学习反馈和持续支持。
+
+微信搜索 **程序员李浩** 即可关注。
 
 ## 贡献
 
