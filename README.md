@@ -103,7 +103,7 @@ Then just tell your AI: *"Draw an architecture diagram for this project"* — it
 | Claude Code | `.claude/skills/ai-viz/` |
 | Cursor | `.cursor/rules/` |
 | Windsurf | `.windsurf/rules/` |
-| OpenCode | `.opencode/agents/` |
+| OpenCode | `.opencode/skills/ai-viz/` |
 | GitHub Copilot | `.github/copilot-instructions.md` |
 | Codex | `codex.md` |
 | Qoder | `skills/ai-viz/` |

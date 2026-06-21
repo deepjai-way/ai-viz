@@ -137,7 +137,7 @@ class BaseAdapter {
 | Claude Code | `.claude/skills/ai-viz/` | `.md` + YAML frontmatter | 多文件（SKILL.md + 每插件） |
 | Cursor | `.cursor/rules/` | `.mdc` + frontmatter | 多文件（核心 + 每插件） |
 | Windsurf | `.windsurf/rules/` | `.md` + frontmatter | 多文件（核心 + 每插件） |
-| OpenCode | `.opencode/agents/` | `.md` + JSON 配置 | 单 agent 文件 + opencode.json |
+| OpenCode | `.opencode/skills/ai-viz/` | `.md` + YAML frontmatter | 多文件（SKILL.md + 每插件） |
 | GitHub Copilot | `.github/` | `.md` + 标记符 | 单文件（追加到 copilot-instructions.md） |
 | Qoder | `skills/ai-viz/` | `.md` + YAML frontmatter | 多文件（SKILL.md + 每插件） |
 | Aider | `.ai-viz/` | `.md` + conf 引用 | 单 instructions.md + .aider.conf.yml |
@@ -145,9 +145,12 @@ class BaseAdapter {
 ### 创建新适配器
 
 1. 创建 `src/adapters/<tool-name>.js`
-2. 继承 `BaseAdapter`
-3. 实现 `getOutputDir`、`detect`、`install`、`uninstall`
-4. 在 `src/commands/init.js` 的 ADAPTERS 映射中注册
+2. 根据工具的扩展机制选择基类：
+   - **SkillAdapter** — 工具原生支持 skill（SKILL.md + 分离文件）
+   - **RuleAdapter** — IDE 类工具使用 rule 文件（frontmatter + 自包含）
+   - **InstructionsAdapter** — 单文件指令（合并内容）
+3. 只需提供配置（输出目录、检测路径、frontmatter 字段等），基类处理公共逻辑
+4. 在 `src/commands/init.js`、`add.js`、`remove.js`、`update.js` 的 ADAPTERS 映射中注册
 
 ## 编译器
 

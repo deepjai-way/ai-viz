@@ -137,7 +137,7 @@ class BaseAdapter {
 | Claude Code | `.claude/skills/ai-viz/` | `.md` + YAML frontmatter | Multi-file (SKILL.md + per-plugin) |
 | Cursor | `.cursor/rules/` | `.mdc` + frontmatter | Multi-file (core + per-plugin) |
 | Windsurf | `.windsurf/rules/` | `.md` + frontmatter | Multi-file (core + per-plugin) |
-| OpenCode | `.opencode/agents/` | `.md` + JSON config | Single agent file + opencode.json |
+| OpenCode | `.opencode/skills/ai-viz/` | `.md` + YAML frontmatter | Multi-file (SKILL.md + per-plugin) |
 | GitHub Copilot | `.github/` | `.md` with markers | Single file (appends to copilot-instructions.md) |
 | Qoder | `skills/ai-viz/` | `.md` + YAML frontmatter | Multi-file (SKILL.md + per-plugin) |
 | Aider | `.ai-viz/` | `.md` + conf reference | Single instructions.md + .aider.conf.yml |
@@ -145,9 +145,12 @@ class BaseAdapter {
 ### Creating a New Adapter
 
 1. Create `src/adapters/<tool-name>.js`
-2. Extend `BaseAdapter`
-3. Implement `getOutputDir`, `detect`, `install`, `uninstall`
-4. Register in `src/commands/init.js` ADAPTERS map
+2. Choose a base class based on the tool's extension mechanism:
+   - **SkillAdapter** — tool natively supports skills (SKILL.md + separate files)
+   - **RuleAdapter** — IDE-style tool using rule files (frontmatter + self-contained)
+   - **InstructionsAdapter** — single-file instructions (merged content)
+3. Only provide config (output dir, detect paths, frontmatter fields, etc.) — the base class handles common logic
+4. Register in the ADAPTERS map in `src/commands/init.js`, `add.js`, `remove.js`, `update.js`
 
 ## Compiler
 
