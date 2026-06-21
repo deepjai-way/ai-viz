@@ -1,16 +1,25 @@
 {
   "name": "ai-viz",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "AI-powered visualization methodology & toolkit - Turn ideas into professional diagrams and illustrations with AI coding tools",
-  "keywords": ["ai", "visualization", "diagram", "drawio", "excalidraw", "mermaid", "claude-code", "cursor"],
+  "keywords": [
+    "ai",
+    "visualization",
+    "diagram",
+    "drawio",
+    "excalidraw",
+    "mermaid",
+    "claude-code",
+    "cursor"
+  ],
   "author": "",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/deepjai-way/ai-viz"
+    "url": "git+https://github.com/deepjai-way/ai-viz.git"
   },
   "bin": {
-    "ai-viz": "./bin/cli.js"
+    "ai-viz": "bin/cli.js"
   },
   "main": "src/index.js",
   "files": [
