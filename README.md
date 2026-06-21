@@ -172,6 +172,17 @@ ai-viz/
 3. The **Adapter** for your AI tool writes compiled instructions to the tool's native location
 4. Your AI coding tool picks up the instructions and gains visualization capabilities
 
+### Why Project-Level, Not Global?
+
+ai-viz installs **per-project**, not globally. This is a deliberate design choice:
+
+- **Design language varies by project** — Project A may use a dark theme, Project B a light one; a single global config can't serve both
+- **Plugins are opt-in per project** — A backend project may only need mermaid, while a frontend project may want excalidraw; forcing all plugins globally is noise
+- **Knowledge sources live in projects** — ai-viz links to code, DDL, and docs within the project, so the installation should follow the knowledge
+- **Version isolation** — Different projects can pin different versions of ai-viz without affecting each other
+
+Run `npx ai-viz init` in each project — each manages its own config and plugins independently.
+
 ## Documentation
 
 - [Getting Started](./docs/en/getting-started.md)
